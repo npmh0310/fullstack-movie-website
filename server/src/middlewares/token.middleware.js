@@ -1,6 +1,6 @@
 import jsonwebtoken from "jsonwebtoken";
-import responseHandle from "../handlers/response.handle";
-import userModel from "../models/user.model";
+import responseHandle from "../handlers/response.handle.js";
+import userModel from "../models/user.model.js";
 //?  để giải mã và kiểm tra tính hợp lệ của token được gửi trong tiêu đề "Authorization" của request HTTP
 const tokenDecode = (req) => {
   try {
